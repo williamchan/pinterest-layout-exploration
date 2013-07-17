@@ -9,7 +9,7 @@ To follow along, clone this repository and open the pinterest-layout.html in you
 The first important ingredient of this layout is the div containing all of the pins:
 
     <div class="variableHeightLayout ... GridItems ..." style="height: 4665px;">
-      ... items/pints ...
+      ... items/pins ...
     </div>
 
 In particular, there is a style called <code>.GridItems.variableHeightLayout>.item</code> that grants the rule <code>"position: absolute;"</code> to each grid item.
