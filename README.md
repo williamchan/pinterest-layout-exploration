@@ -36,7 +36,7 @@ Both "left" and "top" are calculated individually for each pin. The "left" value
 
 While inline styles are generally discouraged, I must say this is quite a clever usage.
 
-As for how "top" and "left" for each pin are calculated, that is controlled by the accompanying JS. That script runs every time a pinterest page is loaded, when additional pins are loaded, and when the window is resized (pinterest pages are adaptive and will lay out between 3 and 10 columns based on window size).
+As for how "top" and "left" for each pin are calculated, that is controlled by the accompanying JS. That script runs every time a pinterest page is loaded, when additional pins are loaded, and when the window is resized (pinterest pages are adaptive and will lay out between 3 and 10 columns based on the width of your browser).
 
 That script can be read if downloaded and unminified. Search for code that looks like "left=" and "top=". I am going to end my exploration here because it's a lot of JS. And besides, Pinterest employees kindly summarize that script in http://www.quora.com/Pinterest/What-technology-is-used-to-generate-pinterest-coms-absolute-div-stacking-layout.
 
