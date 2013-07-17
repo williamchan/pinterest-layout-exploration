@@ -14,7 +14,7 @@ The first important ingredient of this layout is the div containing all of the p
 
 In particular, there is a style called <code>.GridItems.variableHeightLayout>.item</code> that grants the rule <code>"position: absolute;"</code> to each grid item.
 
-Inside this containing div are all of the pins, also known as items.
+Inside this containing div are all of the pins, also known as grid items.
 
     <div class="variableHeightLayout padItems GridItems Module centeredWithinWrapper" style="height: 4665px;">
       <div class="item " style="top: 0px; left: 0px; visibility: visible;"> ... </div>
@@ -45,7 +45,7 @@ That script can be read if downloaded and unminified. Search for code that looks
 
 The approach I followed was:
 - I downloaded the html and css for my pinterest page.
-- I pruned much of the html, leaving only the nav bar and tens pins.
+- I pruned much of the html, leaving only the nav bar and ten pins.
 - I downloaded the css and pruned much of that. There is a lot going on in CSS and also JS, which I'm ignoring here, and it is easier to follow along with only the html and css to inspect.
 - I used Google Chrome Tools to inspect the elements and see how these pins are laid out. For example, I would delete a style and if the pinterest grid fell apart, then that is a good clue that it's an important style.
 
