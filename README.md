@@ -1,6 +1,6 @@
 pinterest-layout-exploration
 ============================
-Pinterest has a beautiful layout, and I was curious how they cascade their pins in neat columns.
+Pinterest has a beautiful layout, and I was curious how they cascade their pins into neat columns.
 
 To follow along, clone this repository and open the pinterest-layout.html in your browser.
 
@@ -14,7 +14,7 @@ The first important ingredient of this layout is the div containing all of the p
 
 In particular, there is a style called <code>.GridItems.variableHeightLayout>.item</code> that grants the rule <code>"position: absolute;"</code> to each grid item.
 
-Inside that containing div are all of the pins aka items.
+Inside this containing div are all of the pins, also known as items.
 
     <div class="variableHeightLayout padItems GridItems Module centeredWithinWrapper" style="height: 4665px;">
       <div class="item " style="top: 0px; left: 0px; visibility: visible;"> ... </div>
@@ -32,7 +32,7 @@ Inside that containing div are all of the pins aka items.
 
 Note how each item has an inline style.
 
-Both "left" and "top" are calculated individually for each pin. The "left" values are 0px, 250px, 500px, 750px, or 1000px, which is how 5 columns are laid out. All pins, and hence each column, are constrained to 236px by the <code>".Pin.summary .pinWrapper"</code> syle. The "top" values are calculated for each based on the pins above it. And this all works because of <code>"position: absolute;"</code> as inherited from the containing div. 
+Both "left" and "top" are calculated individually for each pin. The "left" values are 0px, 250px, 500px, 750px, or 1000px, which is how 5 columns are laid out here. All pins, and hence each column, are constrained to 236px by the <code>".Pin.summary .pinWrapper"</code> syle. The "top" values are calculated for each based on the pins above it. And this all works because of <code>"position: absolute;"</code> as inherited from the containing div. 
 
 While inline styles are generally discouraged, I must say this is quite a clever usage.
 
@@ -47,8 +47,8 @@ The approach I followed was:
 - I downloaded the html and css for my pinterest page.
 - I pruned much of the html, leaving only the nav bar and tens pins.
 - I downloaded the css and pruned much of that. There is a lot going on in CSS and also JS, which I'm ignoring here, and it is easier to follow along with only the html and css to inspect.
-- I used Google Chrome Tools to inspect the elements and see how these pins are laid out. For example, I would delete styles 
+- I used Google Chrome Tools to inspect the elements and see how these pins are laid out. For example, I would delete a style and if the pinterest grid fell apart, then that is a good clue that it's an important style.
 
 ### Also of interest
 
-It'll be interesting to look at http://masonry.desandro.com, a JavaScript grid layout library.
+It would be interesting to look at http://masonry.desandro.com, a JavaScript grid layout library.
